@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+<html dir="ltr" lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" sizes="16x16" href="images/favicon.ico">
+        <title>Tekken 8</title>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <div class="preloader">
+            <svg width="281" height="220" viewBox="0 0 281 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g fill="#F50A64" class="eight">
+                    <path d="M223.427 80.036L272.054 55.7173L279.001 67.0081L269.449 82.6416V86.1157L265.107 92.1954L260.766 94.8009L249.477 112.171L182.615 145.175H146.145L127.91 154.729L109.675 181.654L113.148 187.733L65.3896 212.052L55.8379 197.287L66.258 181.654L65.3896 179.048L70.5996 172.1L74.073 170.363L85.3614 152.992L161.775 114.777H190.43L206.06 106.092L223.427 80.036Z" stroke="white" stroke-width="2" paint-order="stroke" />
+                    <path d="M186.087 151.255L213.874 137.358L224.294 154.729L213.006 171.231L213.874 173.836L208.664 180.785L205.19 182.522L193.902 199.024L153.09 219H70.598L68.8613 217.263L118.357 192.944H142.67L160.905 183.39L180.009 155.597L176.535 151.255H186.087Z" stroke="white" stroke-width="2" paint-order="stroke" />
+                    <path d="M180.878 46.1636H266.843L268.58 49.6377L217.348 74.8249H190.429L174.799 82.6417L157.432 108.697L119.226 127.805L109.674 111.303L120.094 94.801L119.226 93.064L124.436 85.2472L127.909 83.5102L139.197 66.1397L180.878 46.1636Z" stroke="white" stroke-width="2" paint-order="stroke" />
+                </g>
+                <g fill="white" class="T">
+                    <path d="M2 1H257.292L193.903 33.1355H148.749L75.8088 139.096H94.9122L29.7868 169.494H2L94.0439 33.1355H65.3887L2 1Z" stroke="white" stroke-width="2" />
+                </g>
+                <g fill="transparent" class="eight">
+                    <path d="M223.427 80.036L272.054 55.7173L279.001 67.0081L269.449 82.6416V86.1157L265.107 92.1954L260.766 94.8009L249.477 112.171L182.615 145.175H146.145L127.91 154.729L109.675 181.654L113.148 187.733L65.3896 212.052L55.8379 197.287L66.258 181.654L65.3896 179.048L70.5996 172.1L74.073 170.363L85.3614 152.992L161.775 114.777H190.43L206.06 106.092L223.427 80.036Z" stroke="white" stroke-width="2" paint-order="stroke" />
+                    <path d="M186.087 151.255L213.874 137.358L224.294 154.729L213.006 171.231L213.874 173.836L208.664 180.785L205.19 182.522L193.902 199.024L153.09 219H70.598L68.8613 217.263L118.357 192.944H142.67L160.905 183.39L180.009 155.597L176.535 151.255H186.087Z" stroke="white" stroke-width="2" paint-order="stroke" />
+                    <path d="M180.878 46.1636H266.843L268.58 49.6377L217.348 74.8249H190.429L174.799 82.6417L157.432 108.697L119.226 127.805L109.674 111.303L120.094 94.801L119.226 93.064L124.436 85.2472L127.909 83.5102L139.197 66.1397L180.878 46.1636Z" stroke="white" stroke-width="2" paint-order="stroke" />
+                </g>
+                <g fill="transparent">
+                    <path d="M2 1H257.292L193.903 33.1355H148.749L75.8088 139.096H94.9122L29.7868 169.494H2L94.0439 33.1355H65.3887L2 1Z" stroke="white" stroke-width="2" />
+                </g>
+            </svg>
+        </div>
+        <nav class="navbar navbar-expand-lg bg-black fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" alt="Logo" width="200" height="51">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto text-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#story">HISTÓRIA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#fighters">LUTADORES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#media">MÍDIAS</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex justify-content-center">
+                        <a href="#pre-order">
+                            <button type="button" class="btn-special">RESERVAR AGORA</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <section>
+                <div id="banner-content" class="row col-md-12 col-lg-6 text-white text-center">
+                    <img src="images/tekken8.png" alt="logo">
+                    <h1 class="text-white main-title">O PUNHO ENCONTRA O DESTINO</h1>
+                    <a href="#pre-order">
+                        <button type="button" class="btn-special">RESERVAR AGORA</button>
+                    </a>
+                    <img src="images/plataformas.webp" alt="plataformas">
+                </div>
+                <img id="banner" src="images/banner.webp" alt="banner">
+                <img id="banner-mobile" src="images/banner-mobile.webp" alt="banner">
+            </section>
+            <section>
+                <div id="rivals-images" class="row col-md-12 col-lg-6">
+                    <img id="jin" src="images/jin-kazama.webp" alt="jin-kazama">
+                    <img id="kazuya" src="images/kazuya-mishima.png" alt="kazuya-mishima">
+                    <img id="rivals" src="images/rivals.png" alt="rivals">
+                </div>
+                <div id="rivals-content" class="row col-md-12 col-lg-6 text-white text-left">
+                    <h1 class="card-title">O PUNHO ENCONTRA O DESTINO</h1>
+                    <h3 class="card-text">Após derrotar seu pai, Heihachi Mishima, Kazuya continua seu plano de dominação global, usando as forças da G Corporation para colocar o mundo em guerra.
+                        <br><br>
+                        Jin é forçado a confrontar seu destino quando se reencontra com sua mãe, que estava desaparecida há muito tempo, e tentar impedir o reinado de terror de seu pai, Kazuya.
+                    </h3>
+                    <a href="#learn-more">
+                        <button type="button" class="btn-special">SAIBA MAIS</button>
+                    </a>
+                </div>
+                <img id="background-mobile" src="images/assets/background-mobile.webp" alt="background">
+                <img id="background" src="images/assets/background.webp" alt="background">
+            </section>
+            <section>
+                <img id="kazuya-details" src="images/kazuya-details.gif" alt="new-generation-bg">
+                <div id="new-generation-card" class="card col-lg-12 col-xl-5 text-left text-white">
+                    <h1 class="card-title">UM JOGO DE LUTA PARA UMA NOVA GERAÇÃO</h1>
+                    <h3 class="card-text">Com tecnologia Unreal Engine 5 e disponível exclusivamente para PS5, Xbox Series X|S e digitalmente para PC, TEKKEN 8 ultrapassa os limites de hardware e tecnologia da nova geração. O jogo apresenta modelos de personagens em alta definição construídos do zero, com pele, cabelos e músculos da mais alta fidelidade que reagem de forma realista para retratar a animação de personagens realistas.</h3>
+                </div>
+                <iframe id="new-generation-video" role="presentation" src="https://player.vimeo.com/video/873454894?background=true&autopause=0&loop=1"></iframe>
+            </section>
+            <section id="editions">
+                <h1 id="editions-title" class="section-title text-center text-white">EDIÇÕES</h1>
+                <div id="game-editions" class="row justify-content-center scroll-horizontal-mobile">
+                    <div class="col-sm-12 col-md-2 game-edition">
+                        <img class="edition-thumbnail img-fluid" src="images/editions/standard-edition.webp" alt="standard-edition">
+                        <h1 class="edition-name text-center text-white">EDIÇÃO PADRÃO</h1>
+                        <div>
+                            <h5 class="text-center">&nbsp;</h5>
+                            <h3 class="text-center">-----&nbsp;INCLUI&nbsp;-----</h3>
+                            <ul>
+                                <li>Jogo Base</li>
+                            </ul>
+                            <img class="pre-order-bonus" src="images/pre-order-ps5-bonus.webp" alt="pre-order-bonus">
+                            <button class="btn-special btn-edition">SELECIONE</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-2 game-edition">
+                        <img class="edition-thumbnail img-fluid" src="images/editions/deluxe-edition.webp" alt="deluxe-edition">
+                        <h1 class="edition-name text-center text-white">EDIÇÃO DELUXE</h1>
+                        <div>
+                            <h5 class="text-center">* SOMENTE DIGITAL *</h5>
+                            <h3 class="text-center">-----&nbsp;INCLUI&nbsp;-----</h3>
+                            <ul>
+                                <li>Jogo Base</li>
+                                <li>Passe Ano 1 de Personagens Jogáveis</li>
+                                <ul>
+                                    <li>4 personagens jogáveis adicionais</li>
+                                    <li>Roupa de Avatar: Kinjin</li>
+                                </ul>
+                                <li>Trajes de Personagem: Pacote de Roupas Douradas</li>
+                                <ul>
+                                    <li>Trajes de Avatar: Conjunto de Camisetas Clássicas de TEKKEN (32 modelos)</li>
+                                </ul>
+                            </ul>
+                            <img class="pre-order-bonus" src="images/pre-order-ps5-bonus.webp" alt="pre-order-bonus">
+                            <button class="btn-special btn-edition">SELECIONE</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-2 game-edition">
+                        <img class="edition-thumbnail img-fluid" src="images/editions/ultimate-edition.webp" alt="ultimate-edition">
+                        <h1 class="edition-name text-center text-white">EDIÇÃO ULTIMATE</h1>
+                        <div>
+                            <h5 class="text-center">* SOMENTE DIGITAL *</h5>
+                            <h3 class="text-center">-----&nbsp;INCLUI&nbsp;-----</h3>
+                            <ul>
+                                <li>Jogo Base</li>
+                                <li>Passe Ano 1 de Personagens Jogáveis</li>
+                                <ul>
+                                    <li>4 personagens jogáveis adicionais</li>
+                                    <li>Roupa de Avatar: Kinjin</li>
+                                </ul>
+                                <li>Trajes de Personagem: Pacote de Roupas Douradas</li>
+                                <li>1 traje por cada personagem jogável (32 no total)</li>
+                                <ul>
+                                    <li>Trajes de Avatar: Conjunto de Camisetas Clássicas de TEKKEN (32 modelos)</li>
+                                </ul>
+                                <li>Roupas de Avatar: Kazuya Mishima, Jin Kazama e Jun Kazama</li>
+                            </ul>
+                            <img class="pre-order-bonus" src="images/pre-order-ps5-bonus.webp" alt="pre-order-bonus">
+                            <button class="btn-special btn-edition">SELECIONE</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-2 game-edition hidden-desktop">
+                        <img class="edition-thumbnail img-fluid" src="images/editions/standard-edition.webp" alt="standard-edition">
+                        <h1 class="edition-name text-center text-white">EDIÇÃO PADRÃO</h1>
+                        <div>
+                            <h5 class="text-center">&nbsp;</h5>
+                            <h3 class="text-center">-----&nbsp;INCLUI&nbsp;-----</h3>
+                            <ul>
+                                <li>Jogo Base</li>
+                            </ul>
+                            <img class="pre-order-bonus" src="images/pre-order-ps5-bonus.webp" alt="pre-order-bonus">
+                            <button class="btn-special btn-edition">SELECIONE</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-2 game-edition hidden-desktop">
+                        <img class="edition-thumbnail img-fluid" src="images/editions/deluxe-edition.webp" alt="deluxe-edition">
+                        <h1 class="edition-name text-center text-white">EDIÇÃO DELUXE</h1>
+                        <div>
+                            <h5 class="text-center">* SOMENTE DIGITAL *</h5>
+                            <h3 class="text-center">-----&nbsp;INCLUI&nbsp;-----</h3>
+                            <ul>
+                                <li>Jogo Base</li>
+                                <li>Passe Ano 1 de Personagens Jogáveis</li>
+                                <ul>
+                                    <li>4 personagens jogáveis adicionais</li>
+                                    <li>Roupa de Avatar: Kinjin</li>
+                                </ul>
+                                <li>Trajes de Personagem: Pacote de Roupas Douradas</li>
+                                <ul>
+                                    <li>Trajes de Avatar: Conjunto de Camisetas Clássicas de TEKKEN (32 modelos)</li>
+                                </ul>
+                            </ul>
+                            <img class="pre-order-bonus" src="images/pre-order-ps5-bonus.webp" alt="pre-order-bonus">
+                            <button class="btn-special btn-edition">SELECIONE</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-2 game-edition hidden-desktop">
+                        <img class="edition-thumbnail img-fluid" src="images/editions/ultimate-edition.webp" alt="ultimate-edition">
+                        <h1 class="edition-name text-center text-white">EDIÇÃO ULTIMATE</h1>
+                        <div>
+                            <h5 class="text-center">* SOMENTE DIGITAL *</h5>
+                            <h3 class="text-center">-----&nbsp;INCLUI&nbsp;-----</h3>
+                            <ul>
+                                <li>Jogo Base</li>
+                                <li>Passe Ano 1 de Personagens Jogáveis</li>
+                                <ul>
+                                    <li>4 personagens jogáveis adicionais</li>
+                                    <li>Roupa de Avatar: Kinjin</li>
+                                </ul>
+                                <li>Trajes de Personagem: Pacote de Roupas Douradas</li>
+                                <li>1 traje por cada personagem jogável (32 no total)</li>
+                                <ul>
+                                    <li>Trajes de Avatar: Conjunto de Camisetas Clássicas de TEKKEN (32 modelos)</li>
+                                </ul>
+                                <li>Roupas de Avatar: Kazuya Mishima, Jin Kazama e Jun Kazama</li>
+                            </ul>
+                            <img class="pre-order-bonus" src="images/pre-order-ps5-bonus.webp" alt="pre-order-bonus">
+                            <button class="btn-special btn-edition">SELECIONE</button>
+                        </div>
+                    </div>
+                </div>
+                <img id="game-editions-background" src="images/assets/game-editions.webp" alt="game-editions">
+            </section>
+            <section>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <img id="king" src="images/king.webp" alt="king">
+                    </div>
+                    <div id="stay-connected-content" class="col-md-12 col-lg-6 text-left text-white">
+                        <form id="stay-connected-form">
+                            <div class="row">
+                                <h1 id="stay-connected-title" class="card-title">FIQUE CONECTADO EM TEKKEN 8!</h1>
+                                <div class="row">
+                                    <div class="col-md-12 col-lg-6">
+                                        <input type="email" id="email" name="email" placeholder="E-mail" class="text-center col-8" required>
+                                    </div>
+                                    <div class="col-md-12 col-lg-6">
+                                        <button id="submit" type="submit" class="btn-special">CADASTRAR</button>
+                                    </div>
+                                </div>
+                                <p id="terms" class="footer-text text-left">Ao se cadastrar em nossa lista de e-mail, você dá consentimento para que possamos entrar em contato com ofertas e atualizações de marketing via e-mail e também concorda com nossa <a href="https://www.bandainamcoent.com/legal/privacy" class="link">Política de Privacidade</a> e <a href="https://www.bandainamcoent.com/legal/terms" class="link">Termos de Serviço</a>.</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <img id="stay-connected-mobile" src="images/assets/stay-connected-mobile.webp" alt="stay-connected-mobile">
+                <img id="stay-connected-footer" src="images/assets/stay-connected-footer.webp" alt="stay-connected-footer">
+                <img id="stay-connected-background" src="images/assets/stay-connected.webp" alt="stay-connected">
+            </section>
+            <section id="learn-more">
+                <h1 id="learn-more-title" class="section-title text-center text-white">SAIBA MAIS</h1>
+                <img id="learn-more-background" src="images/assets/learn-more.jpeg" alt="learn-more" class="img-fluid">
+                <div id="thumbnails" class="row text-center">
+                    <div class="thumbnail-div col-md-12 col-lg-6">
+                        <a href="#learn-more">
+                            <img id="story" class="thumbnail" src="images/screenshots/screenshot1.webp" alt="story-jin-kazama">
+                        </a>
+                    </div>
+                    <div class="thumbnail-div col-md-12 col-lg-6">
+                        <a href="#media">
+                            <img id="media" class="thumbnail" src="images/screenshots/screenshot2.webp" alt="media-thumbnail">
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section id="pre-footer" class="text-center">
+                <div id="div-plataforms">
+                    <img id="plataformas" src="images/plataformas.webp" alt="plataformas">
+                    <div class="row">
+                        <div class="col-12">
+                            <img id="playstation" src="images/playstation.svg" alt="playstation">
+                        </div>
+                        <div class="col-12">
+                            <img id="xbox" src="images/xbox.svg" alt="xbox">
+                        </div>
+                        <div class="col-12">
+                            <img id="steam" src="images/steam.svg" alt="steam">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer mt-auto py-3 text-white text-center">
+            <div id="footer-content" class="row">
+                <div class="col-sm-12 col-lg-2 order-lg-1 footer-div">
+                    <img src="images/bandai-nanco.svg" alt="bandai-nanco">
+                </div>
+                <div class="col-sm-12 col-lg-2 order-lg-3 footer-div">
+                    <p class="footer-text text-left text-white">
+                        Violência<br>
+                        Conteúdo Sexual<br>
+                        Usuários Interagem
+                    </p>
+                </div>
+                <div class="col-sm-12 col-lg-8 order-lg-2 footer-div">
+                    <p class="footer-text text-center text-white">
+                        TEKKEN™8 & ©Bandai Namco Entertainment Inc. Todo o conteúdo, marcas, nomes e logotipos de terceiros são usados sob licença e permanecem propriedade de seus respectivos donos.<br>
+                        Todos os direitos reservados.
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- JS -->
+        <script src="js/script.js"></script>
+    </body>
+
+</html>

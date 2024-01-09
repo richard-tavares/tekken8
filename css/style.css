@@ -1,0 +1,752 @@
+:root {
+  --cor-principal: #f62373;
+  --cor-azul-piscina: #00bddb;
+  --cor-azul-escuro: #0815bb;
+  --cor-fundo: #202324;
+  --cor-texto: #fff;
+  --font-family: 'bebas-neue-pro', sans-serif;
+}
+
+@import url("https://p.typekit.net/p.css?s=1&k=dxl7gjx&ht=tk&f=44426.44427.44428.44429.45065.45066.45069.45070.45079.45080.45083.45084&a=103066822&app=typekit&e=css");
+
+@font-face {
+  font-family: "bebas-neue-pro";
+  src: url("https://use.typekit.net/af/1c26fd/00000000000000007735c8b3/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff2"),
+    url("https://use.typekit.net/af/1c26fd/00000000000000007735c8b3/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff"),
+    url("https://use.typekit.net/af/1c26fd/00000000000000007735c8b3/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("opentype");
+  font-display: auto;
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "bebas-neue-pro";
+  src: url("https://use.typekit.net/af/2ba20d/00000000000000007735c8b6/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),
+    url("https://use.typekit.net/af/2ba20d/00000000000000007735c8b6/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),
+    url("https://use.typekit.net/af/2ba20d/00000000000000007735c8b6/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "bebas-neue-pro";
+  src: url("https://use.typekit.net/af/6fab65/00000000000000007735c8b9/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("woff2"),
+    url("https://use.typekit.net/af/6fab65/00000000000000007735c8b9/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("woff"),
+    url("https://use.typekit.net/af/6fab65/00000000000000007735c8b9/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "bebas-neue-pro";
+  src: url("https://use.typekit.net/af/92adad/00000000000000007735c8bc/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i6&v=3") format("woff2"),
+    url("https://use.typekit.net/af/92adad/00000000000000007735c8bc/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i6&v=3") format("woff"),
+    url("https://use.typekit.net/af/92adad/00000000000000007735c8bc/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i6&v=3") format("opentype");
+  font-display: auto;
+  font-style: italic;
+  font-weight: 600;
+  font-stretch: normal;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--cor-fundo);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--cor-principal);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  font-family: var(--font-family);
+}
+
+.nav-item a {
+  color: var(--cor-texto);
+  font-size: 1.5em;
+  font-style: italic;
+  font-weight: bold;
+  font-family: var(--font-family);
+  text-decoration: none;
+}
+
+.nav-item a:hover,
+.nav-item a:active,
+.nav-item a:focus-visible {
+  color: var(--cor-principal);
+}
+
+.navbar .navbar-toggler-icon {
+  filter: invert(1);
+}
+
+.preloader {
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  display: flex;
+  z-index: 99;
+}
+
+.preloader svg {
+  width: 100%;
+  height: 100%;
+  max-width: 281px;
+  max-height: 220px;
+  animation: pulse 0.5s ease-in-out infinite alternate;
+  z-index: 999;
+}
+
+.preloader svg path {
+  fill: var(--cor-principal);
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+.btn-special {
+  --border: 0.3em;
+  --slant: 0.7em;
+
+  border: none;
+  padding: 0.4em 1.2em;
+  cursor: pointer;
+  position: relative;
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: var(--font-family);
+  white-space: nowrap;
+  background: linear-gradient(to bottom right, var(--cor-principal) 50%, #0000 50.1%) top left, linear-gradient(to top left, var(--cor-principal) 50%, #0000 50.1%) bottom right;
+  background-size: calc(var(--slant) + 1.3 * var(--border)) calc(var(--slant) + 1.3 * var(--border));
+  background-repeat: no-repeat;
+  box-shadow: 0 200px 0 200px inset var(--s, #0000), 0 0 0 var(--border) inset var(--cor-principal);
+  clip-path: polygon(var(--slant) 0, 100% 0, 100% calc(100% - var(--slant)), calc(100% - var(--slant)) 100%, 0 100%, 0 var(--slant));
+  transition: color var(--t, 0.3s), background-size 0.3s;
+  z-index: 9;
+}
+
+.btn-special:focus-visible {
+  outline-offset: calc(-1 * var(--border));
+  outline: var(--border) solid #000c;
+  background-size: 0 0;
+  clip-path: none;
+}
+
+.btn-special:hover,
+.btn-special:active {
+  --t: 0.2s 0.1s;
+  color: #fff;
+  background-size: 100% 100%;
+}
+
+.btn-special:active {
+  --s: #0005;
+  transition: none;
+}
+
+.main-title {
+  font-size: 5em;
+  font-weight: bold;
+  font-family: var(--font-family);
+}
+
+.section-title {
+  font-size: 4em;
+  font-weight: bold;
+  font-style: italic;
+  font-family: var(--font-family);
+  margin-top: 3%;
+}
+
+.card-title {
+  font-size: 4em;
+  font-style: italic;
+  font-weight: bold;
+  font-family: var(--font-family);
+  padding-bottom: 10%;
+}
+
+.card-text {
+  font-size: 2em;
+  font-family: var(--font-family);
+  padding-bottom: 5%;
+}
+
+.link {
+  color: var(--cor-azul-escuro);
+}
+
+#banner {
+  margin-top: 30px;
+  width: 100%;
+}
+
+#banner-mobile,
+#rivals,
+#kazuya-details,
+#background-mobile,
+.hidden-desktop,
+#stay-connected-mobile,
+#playstation,
+#xbox,
+#steam {
+  display: none;
+}
+
+#banner-content {
+  position: absolute;
+  padding: 5%;
+}
+
+#jin {
+  position: absolute;
+  margin-top: -5%;
+  width: 40%;
+}
+
+#kazuya {
+  position: absolute;
+  margin-left: 20%;
+  margin-top: -5%;
+  width: 40%;
+}
+
+#rivals-content {
+  position: absolute;
+  margin-left: 52%;
+  padding: 5%;
+}
+
+#background {
+  width: 100%;
+  min-height: 800px;
+}
+
+#new-generation-card {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin-top: 10%;
+  margin-left: 15%;
+  border-radius: 0;
+  padding: 5%;
+  z-index: 3;
+}
+
+#editions {
+  position: relative;
+}
+
+#editions-title {
+  position: relative;
+  z-index: 3;
+}
+
+#game-editions {
+  position: relative;
+  z-index: 3;
+}
+
+.game-edition {
+  position: relative;
+  background: linear-gradient(180deg, #0C232C 0%, #030F14 100%);
+  border: 1px solid var(--cor-azul-piscina);
+  margin: 2% 1.5% 7% 1.5%;
+  padding: 0;
+  min-height: 800px;
+  cursor: pointer;
+}
+
+.game-edition:hover {
+  border: 1px solid var(--cor-principal);
+}
+
+.edition-thumbnail {
+  width: 100%;
+}
+
+.edition-name {
+  background-color: var(--cor-principal);
+  font-size: 2em;
+  font-style: italic;
+  font-weight: bold;
+  padding: 3%;
+  width: 100%;
+}
+
+.game-edition h3,
+.game-edition h5,
+.game-edition li {
+  color: var(--cor-azul-piscina);
+}
+
+.pre-order-bonus {
+  position: absolute;
+  bottom: 12%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5%;
+  width: 100%;
+}
+
+.btn-edition {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+}
+
+#game-editions-background {
+  position: absolute;
+  top: -15%;
+  left: 0;
+  width: 100%;
+  height: 150%;
+  z-index: 2;
+}
+
+#king {
+  position: absolute;
+  margin-top: -5%;
+  margin-left: 5%;
+  z-index: 5;
+}
+
+#stay-connected-content {
+  position: absolute;
+  margin-top: 5%;
+  margin-left: 50%;
+  z-index: 5;
+}
+
+#email {
+  position: relative;
+  background: transparent;
+  background-image: url('/images/assets/input-background.svg') !important;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  outline: none;
+  margin-left: 10%;
+  height: 55px;
+  z-index: 5;
+}
+
+#terms {
+  padding: 5% 20% 0 5%;
+}
+
+#stay-connected-background {
+  position: relative;
+  width: 100%;
+  z-index: 4;
+}
+
+#stay-connected-footer {
+  position: absolute;
+  width: 100%;
+  margin-top: 32%;
+  z-index: 5;
+}
+
+#learn-more {
+  position: relative;
+  z-index: 5;
+}
+
+#lean-more-background {
+  width: 100%;
+}
+
+#thumbnails {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+#learn-more-title {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 6;
+}
+
+.thumbnail {
+  border: solid var(--cor-azul-piscina) 0.2em;
+  width: 70%;
+}
+
+#pre-footer {
+  position: relative;
+  background-color: #20252d;
+  z-index: 7;
+}
+
+.footer {
+  position: relative;
+  height: 350px;
+  background-color: #0b0f17;
+  z-index: 7;
+}
+
+.footer-text {
+  font-size: 1em;
+  font-family: var(--font-family);
+}
+
+@media (min-width: 1200px) and (max-width: 1800px) {
+  #new-generation-video {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 1080px;
+  }
+}
+
+@media (max-width: 1600px) {
+  #king {
+    margin-left: 0;
+    width: 50%;
+  }
+}
+
+/* col-xl */
+@media (min-width: 1200px) {
+  #jin {
+    margin-left: 2%;
+  }
+
+  #new-generation-video {
+    display: block;
+    position: relative;
+    margin-top: -5vh;
+    width: 100%;
+    height: 1080px;
+    z-index: 2;
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 1919px) {
+  #new-generation-card {
+    margin-top: 11%;
+  }
+
+  #new-generation-video {
+    margin-top: -10%;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+  #new-generation-card {
+    margin-top: 0;
+  }
+
+  #new-generation-video {
+    margin-top: -5%;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+  }
+}
+
+@media (max-width: 1199px) {
+  #new-generation-video {
+    display: none;
+  }
+
+  #kazuya-details {
+    display: block;
+    position: relative;
+    margin-top: 30%;
+    width: 100%;
+    z-index: 3;
+  }
+
+  #new-generation-card {
+    position: relative;
+    background-color: #000;
+    margin: 0;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  #jin {
+    margin-left: -10%;
+    width: 60%;
+  }
+
+  #kazuya {
+    margin-left: 3%;
+    width: 65%;
+  }
+
+  #kazuya-details {
+    display: block;
+    position: relative;
+    margin-top: -10%;
+    width: 100%;
+    z-index: 3;
+  }
+
+  #new-generation-card {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1280px) {
+  .main-title {
+    font-size: 3.5em;
+  }
+
+  .card-title {
+    font-size: 3em;
+    padding-bottom: 5%;
+  }
+
+  .card-text {
+    font-size: 1.8em;
+    padding-bottom: 5%;
+  }
+}
+
+@media (min-width: 992px) {
+  #banner-content {
+    margin-top: 17%;
+    margin-left: 45%;
+  }
+}
+
+@media (max-width: 991px) {
+  .nav-item a {
+    padding: 15% 0;
+  }
+
+  .main-title {
+    font-size: 3em;
+  }
+
+  .card-title {
+    font-size: 2.5em;
+    padding-bottom: 5%;
+  }
+
+  .card-text {
+    font-size: 1.8em;
+    padding-bottom: 5%;
+  }
+
+  #banner,
+  #jin,
+  #kazuya,
+  #stay-connected-footer,
+  #plataformas {
+    display: none;
+  }
+
+  #banner-mobile {
+    display: block;
+    width: 100%;
+    min-height: 800px;
+  }
+
+  #banner-content {
+    margin-top: 65%;
+    margin-left: 0;
+    padding: 5%;
+  }
+
+  #rivals {
+    display: block;
+    position: absolute;
+    margin-top: -10%;
+    margin-left: 3%;
+    width: 100vh;
+  }
+
+  #background-mobile {
+    display: block;
+    position: absolute;
+    padding: 0;
+    margin-top: 60%;
+    width: 100%;
+    min-height: 800px;
+    z-index: 1;
+  }
+
+  #rivals-content {
+    position: absolute;
+    margin-left: 0;
+    margin-top: 65%;
+    padding: 5%;
+    z-index: 2;
+  }
+
+  #kazuya-details {
+    display: block;
+    position: relative;
+    margin-top: 30%;
+    width: 100%;
+    z-index: 3;
+  }
+
+  .hidden-desktop {
+    display: block;
+  }
+
+  .scroll-horizontal-mobile {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .scroll-horizontal-mobile .game-edition {
+    flex: 0 0 auto;
+    width: 70%;
+    min-width: auto;
+    white-space: nowrap;
+    margin-left: 10%;
+    margin-bottom: 10%;
+  }
+
+  .scroll-horizontal-mobile ul {
+    white-space: normal;
+    padding: 2%;
+    margin-left: 5%;
+  }
+
+  #stay-connected-background {
+    width: 100%;
+    min-height: 500px;
+  }
+
+  #king {
+    position: absolute;
+    margin-top: -10%;
+    margin-left: 0;
+    width: 100%;
+    z-index: 5;
+  }
+
+  #stay-connected-content {
+    margin: 60% 0 0 0;
+    text-align: center;
+    padding: 5%;
+    z-index: 6;
+  }
+
+  #email {
+    margin-bottom: 5%;
+  }
+
+  #submit {
+    margin-left: 5%;
+  }
+
+  #terms {
+    text-align: center;
+    padding: 5%;
+  }
+
+  #stay-connected-mobile {
+    display: block;
+    position: absolute;
+    margin-top: 50%;
+    width: 100%;
+    min-height: 500px;
+    z-index: 5;
+  }
+
+  #learn-more {
+    margin-top: 50%;
+    min-height: 600px;
+  }
+
+  #learn-more-title {
+    white-space: nowrap;
+    margin: 20% 0;
+  }
+
+  .thumbnail-div {
+    margin-top: 20%;
+  }
+
+  .thumbnail {
+    width: 80%;
+  }
+
+  #learn-more-background {
+    width: 100%;
+    min-height: 600px;
+  }
+
+  #pre-footer {
+    position: relative;
+    background-color: #20252d;
+    z-index: 7;
+  }
+
+  .footer {
+    position: relative;
+    height: 350px;
+    background-color: #0b0f17;
+    z-index: 7;
+  }
+
+  .footer-text {
+    font-size: 1em;
+    font-family: var(--font-family);
+    padding: 0 5%;
+  }
+
+  #playstation,
+  #xbox,
+  #steam {
+    padding: 10%;
+    width: 50%;
+  }
+}
+
+@media (max-width: 500px) {
+  #banner-content {
+    margin-top: 50vh;
+  }
+}
