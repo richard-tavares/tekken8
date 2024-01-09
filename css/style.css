@@ -352,7 +352,7 @@ body {
 #email {
   position: relative;
   background: transparent;
-  background-image: url('/images/assets/input-background.svg') !important;
+  background-image: url('/tekken8/images/assets/input-background.svg') !important;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
