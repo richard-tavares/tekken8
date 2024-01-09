@@ -6,6 +6,10 @@ Este projeto é um clone do site oficial do Tekken 8, construído com HTML, CSS,
 
 Clique [aqui](https://richardtavares.github.io/tekken8/) para acessar o projeto e ver o clone do site oficial do Tekken 8 em funcionamento no GitHub Pages.
 
+## Screenshot
+
+![Screenshot do Projeto](screenshot.png)
+
 ## Pré-requisitos
 
 Antes de começar, certifique-se de ter instalado:
