@@ -411,6 +411,22 @@ body {
   width: 70%;
 }
 
+.thumbnail-title-background {
+  position: absolute;
+  background-color: var(--cor-principal);
+  transform: skew(-20deg);
+  padding: 0 2%;
+  margin-left: -22%;
+  margin-top: 17.5%;
+}
+
+.thumbnail-title {
+  font-family: var(--font-family);
+  font-style: italic;
+  font-weight: bold;
+  transform: skew(20deg);
+}
+
 #pre-footer {
   position: relative;
   background-color: #20252d;
@@ -711,6 +727,12 @@ body {
 
   .thumbnail {
     width: 80%;
+  }
+
+  .thumbnail-title-background {
+    padding: 0 5%;
+    margin-left: -50%;
+    margin-top: 37%;
   }
 
   #learn-more-background {
