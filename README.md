@@ -1,4 +1,4 @@
-# Tekken 8 - Site Clone
+# Tekken 8 - Site Clone [em desenvolvimento]
 
 Este projeto é um clone do site oficial do Tekken 8, construído com HTML, CSS, JavaScript, jQuery e Bootstrap. Ele visa replicar a interface e funcionalidades principais do site oficial do jogo.
 
