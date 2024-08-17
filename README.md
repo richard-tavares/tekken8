@@ -1,32 +1,11 @@
 # Tekken 8 - Site Clone [em desenvolvimento]
 
 Este projeto é um clone do site oficial do Tekken 8, construído com HTML, CSS, JavaScript, jQuery e Bootstrap. Ele visa replicar a interface e funcionalidades principais do site oficial do jogo.
-
-## Visualize o Projeto
-
-Clique [aqui](https://richardtavares.github.io/tekken8/) para acessar o projeto e ver o clone do site oficial do Tekken 8 em funcionamento no GitHub Pages.
+Clique [aqui](https://richardtavares.github.io/tekken8/) para visualizar.
 
 ## Screenshot
 
 ![Screenshot do Projeto](screenshot.png)
-
-## Pré-requisitos
-
-Antes de começar, certifique-se de ter instalado:
-
-- Navegador Web atualizado
-- Conexão com a internet (para carregar recursos externos, como fontes, imagens e scripts)
-
-## Como usar
-
-1. **Clone ou faça o download do repositório:**
-    ```
-    git clone https://RichardTavares/tekken-8-clone.git
-    ```
-
-2. **Abra o arquivo `index.html` no seu navegador:** 
-   - Navegue até o diretório onde o projeto foi clonado ou baixado.
-   - Clique duas vezes no arquivo `index.html` para abri-lo no seu navegador padrão.
 
 ## Funcionalidades
 
@@ -34,8 +13,16 @@ Antes de começar, certifique-se de ter instalado:
 - Utiliza jQuery para interações dinâmicas.
 - Responsivo com o uso do Bootstrap para uma experiência multi-dispositivos.
 
+## Tecnologias Utilizadas
+
+- **[HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)**
+- **[CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)**
+- **[Javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)**
+- **[Bootstrap](https://getbootstrap.com/docs/)**
+
 ## Estrutura do Projeto
 
+O projeto está organizado da seguinte forma:
 - `index.html`: Página principal do site.
 - `css/`: Pasta contendo os arquivos de estilo CSS.
 - `js/`: Pasta contendo os arquivos JavaScript e jQuery.
